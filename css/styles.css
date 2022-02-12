@@ -120,7 +120,6 @@ li {
 
 .logo-dark {
   color: #000000;
-  margin-right: 93px;
 }
 
 .header-list {
@@ -133,14 +132,17 @@ li {
 .header-item + .header-item {
   margin-left: 50px;
 }
+
 .contact-conteiner {
   margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .navigation {
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-left: 93px;
 }
 
 .header-cont-item + .header-cont-item {
