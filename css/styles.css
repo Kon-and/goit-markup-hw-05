@@ -65,6 +65,8 @@ li {
 .accent-text:hover,
 .accent-text:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -103,6 +105,8 @@ li {
 .header-cont-item:hover .header-socials-icons,
 .header-cont-text:focus .header-socials-icons {
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-cont-text {
@@ -206,6 +210,8 @@ li {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------------------- ADVANTAGE ---------------------- */
@@ -294,6 +300,32 @@ li {
   margin-left: 30px;
 }
 
+.doing-box {
+  position: relative;
+}
+
+.doing-textbox {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.doing-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
 /* ---------------------- OUR TEAM ---------------------- */
 
 .our-team {
@@ -361,6 +393,8 @@ li {
   background-color: var(--accent-color);
   border-radius: 50%;
   fill: var(--main-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socials-list {
@@ -429,6 +463,8 @@ li {
 .clients-link:focus .clients-icons {
   border-color: var(--accent-color);
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------------------- FOOTER ---------------------- */
@@ -501,6 +537,8 @@ li {
 .footer-socials-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-link {
@@ -545,6 +583,8 @@ li {
   color: var(--main-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------------------- GALLERY ---------------------- */
@@ -592,11 +632,15 @@ li {
 .projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-link:hover .projects-description {
+.projects-link:hover .projects-description,
+.projects-link:focus .projects-description {
   transform: translateY(0);
   transition: transform 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-pre-text {
@@ -624,6 +668,8 @@ li {
   border-style: solid;
   padding: 20px 24px;
 }
+
+/* ---------------------- MODAL ---------------------- */
 
 .backdrop {
   width: 100vw;
@@ -656,6 +702,9 @@ li {
   right: 8px;
   width: 30px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .close-btn-icon {
@@ -668,4 +717,12 @@ li {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+
+.close-btn:hover .close-btn-icon,
+.close-btn:focus .close-btn-icon {
+  fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(180deg) scale(1.3);
 }
